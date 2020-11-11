@@ -51,33 +51,6 @@ export default new Router({
       ]
     },
     {
-      path: '/example',
-      component: Layout,
-      redirect: '/example/tree',
-      meta: {
-        title: 'Example',
-        icon: 'example'
-      },
-      children: [
-        {
-          path: 'tree',
-          component: () => import(/* webpackChunkName: "tree" */ '@/views/tree/index.vue'),
-          meta: {
-            title: 'Tree',
-            icon: 'tree'
-          }
-        },
-        {
-          path: 'table',
-          component: () => import(/* webpackChunkName: "table" */ '@/views/table/index.vue'),
-          meta: {
-            title: 'Table',
-            icon: 'table'
-          }
-        }
-      ]
-    },
-    {
       path: '/form',
       component: Layout,
       children: [
@@ -148,7 +121,7 @@ export default new Router({
       component: Layout,
       children: [
         {
-          path: 'https://github.com/Armour/vue-typescript-admin-template',
+          path: 'https://github.com/xtsong',
           meta: {
             title: 'External Link',
             icon: 'link'

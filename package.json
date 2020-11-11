@@ -1,8 +1,8 @@
 {
-  "name": "vue-typescript-admin-template",
+  "name": "yidam-app-portal",
   "version": "1.0.0",
   "private": true,
-  "author": "Chong Guo <armourcy@gmail.com>",
+  "author": "xtsong <02087790@yto.net.cn>",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

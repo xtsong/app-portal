@@ -9,6 +9,10 @@
         :key="role"
       >{{ role }}</span>
     </div>
+    <div class="btn-go">
+      <el-button type="primary" @click="goExample">Example</el-button>
+      <el-button type="success">Nested</el-button>
+    </div>
   </div>
 </template>
 
@@ -26,6 +30,12 @@ export default class extends Vue {
 
   get roles() {
     return UserModule.roles
+  }
+
+  private goExample() {
+    // this.$router.replace(exampleRoute)
+    console.log(this.$route)
+    localStorage.setItem('item', 'dash')
   }
 }
 </script>

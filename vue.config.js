@@ -1,12 +1,15 @@
 const path = require('path')
-const name = 'Vue Typescript Admin'
+const name = 'yidam-app-portal'
 
 module.exports = {
   // TODO: Remember to change publicPath to fit your need
-  publicPath: process.env.NODE_ENV === 'production' ? '/vue-typescript-admin-template/' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/yidam-app-portal-template/' : '/',
   lintOnSave: process.env.NODE_ENV === 'development',
   pwa: {
     name: name
+  },
+  devServer: {
+    disableHostCheck: true
   },
   pluginOptions: {
     'style-resources-loader': {
